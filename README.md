@@ -1,8 +1,8 @@
 # Multi-labeling the particle type and damage intensity of mice nuclei
-## Collaborators:__
-Darren Hoang <br />
-Jake Leue <br />
-Diya Mirji <br />
-Thien Vu <br />
-Nadia Ahmed <br />
-Dr. Lauren Sanders
+## Collaborators:
+Darren Hoang (Student) <br />
+Jake Leue (Student) <br />
+Diya Mirji (Student) <br />
+Thien Vu (Student) <br />
+Nadia Ahmed (Professor) <br />
+Dr. Lauren Sanders (NASA GeneLab Scientist)
