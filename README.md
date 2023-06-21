@@ -1,8 +1,8 @@
-## Multi-labeling the particle type and damage intensity of mice nuclei
-# Collaborators:__
-Darren Hoang__
-Jake Leue__
-Diya Mirji__
-Thien Vu__
-Nadia Ahmed__
+# Multi-labeling the particle type and damage intensity of mice nuclei
+## Collaborators:__
+Darren Hoang <br />
+Jake Leue <br />
+Diya Mirji <br />
+Thien Vu <br />
+Nadia Ahmed <br />
 Dr. Lauren Sanders
