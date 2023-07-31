@@ -1,6 +1,13 @@
 # Multi-labeling the particle type and damage intensity of mice nuclei
 Creating a machine learning model that would be able to predict multi-labels of particle type and the intensity of irradiation on mice nuclei.
 
+## Report and Externals
+Summary of our findings and research:
+
+Tech-Memo: [Supervise Me! Tech Memo](externals/techmemo_supervise_me.pdf)
+
+Presentation: [Supervise Me! Showcase](externals/showcase_supervise_me.pdf)
+
 ## How to use?
 We included two models that required training: <br />
 * `mlp_model.py` (baseline) - Uses the MLPClassifier from sklearn.
@@ -29,12 +36,39 @@ As biologically similar organisms, we can conduct experiments on mice for the be
 <br />
 Utilizing machine learning, we want to understand the health effects of radiation exposure on astronauts to potentially discover optimal recovery paths for individuals exposed to radiation particles during space travel. We will do this through the predictions of multi-labels, specifically `<particle, dosage>`. Being able to predict multi-labels of this model will grant us valuable insights into radiation damage and patterns of between nuclei images and damage/particle types.
 
+## Dataset details
+![Alt text](images/data_table.png)
+
+
+## Machine Learning Pipeline
+We needed to create a roadmap to how we were going to use machine learning on the data set.
+
+![Alt text](images/pipeline.png)
+
+We used boto3 to collect the dataset from AWS, and created our baseline model MLP Classifier from scikit-learn.
+
+After forming our baseline, we moved on to use PyTorch and PyTorch Lightning to create our deep-learning CNN architecture.
+
+We used both models to predict single and multi-labels, specifically, our models were trained to predict the particle type that damaged the cell, or the particle type and the dosage amount given.
+
+## Results
+After training our data, we log some metrics that are important to our predictions.
+
+Single-label:
+![Alt text](images/single-label.png)
+
+Multi-label:
+![Alt text](images/multi-label.png)
+
+We have the same metrics for multi-label as we do for single-label, except we added a couple that better represent multi-label predictions, such as Jaccard Similarity and Hamming Loss.
+
+We achieved an 84.78% validation accuracy for our single-label predictions and a 82.7% valdiation accuracy for our multi-label predictions.
+
 ## Collaborators:
 Darren Hoang (Student) <br />
 Jake Leue (Student) <br />
 Diya Mirji (Student) <br />
 Thien Vu (Student) <br />
 Nadia Ahmed (Professor) <br />
-Dr. Lauren Sanders (NASA GeneLab Scientist) <br />
-
-##
+Dr. Lauren Sanders (NASA GeneLab Scientist and Data Provider) <br />
+Dr. Sylvain Costes (NASA Domain Expert)
