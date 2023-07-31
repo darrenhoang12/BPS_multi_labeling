@@ -55,14 +55,24 @@ We used both models to predict single and multi-labels, specifically, our models
 After training our data, we log some metrics that are important to our predictions.
 
 Single-label:
+
 ![Alt text](images/single-label.png)
 
 Multi-label:
+
 ![Alt text](images/multi-label.png)
 
 We have the same metrics for multi-label as we do for single-label, except we added a couple that better represent multi-label predictions, such as Jaccard Similarity and Hamming Loss.
 
 We achieved an 84.78% validation accuracy for our single-label predictions and a 82.7% valdiation accuracy for our multi-label predictions.
+
+## Takeaways
+Based on the results, it is clear that CNN architectures are much better suited for image classification tasks than fully connected neural networks. Additionally, this shows us that there are clear patterns between an image and its particle types and dosages.
+
+Mice share a significant portion of their genetic makeup with humans, which makes them valuable models for studying various biological processes, diseases, and potential treatments.
+
+Therefore, the use of mice in radiation research and mice cell data predictions may provide valuable information that contributes to addressing radiation-related challenges encountered by astronauts.
+
 
 ## Collaborators:
 Darren Hoang (Student) <br />
